@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="w-full p-4 fixed bottom-0 flex justify-around">
+    <footer className="w-full p-4 fixed bottom-0 flex justify-around bg-white">
       <p>LinkedIn</p>
       <p>GitHub</p>
       <p>Email</p>
