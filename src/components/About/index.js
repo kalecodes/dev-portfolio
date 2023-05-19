@@ -18,9 +18,9 @@ function About(props) {
         </div>
 
         <div className="flex justify-evenly pt-5 md:pt-0">
-          <a href="https://github.com/kalecodes"><img src={require('../../assets/icons/001-github.png')} alt="GitHub" className="w-16" /></a>
-          <a href="https://www.linkedin.com/in/kalen-wiley"><img src={require('../../assets/icons/002-linkedin.png')} alt="LinkdIn" className="w-16" /></a>
-          <a href="mailto:kalen.wiley@gmail.com"><img src={require('../../assets/icons/003-gmail.png')} alt="Email" className="w-16" /></a>
+          <a href="https://github.com/kalecodes" target="_blank" rel="noopener noreferrer"><img src={require('../../assets/icons/001-github.png')} alt="GitHub" className="w-16" /></a>
+          <a href="https://www.linkedin.com/in/kalen-wiley" target="_blank" rel="noopener noreferrer"><img src={require('../../assets/icons/002-linkedin.png')} alt="LinkdIn" className="w-16" /></a>
+          <a href="mailto:kalen.wiley@gmail.com" target="_blank" rel="noopener noreferrer"><img src={require('../../assets/icons/003-gmail.png')} alt="Email" className="w-16" /></a>
         </div>
       </div>
     </section>
