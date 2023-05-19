@@ -8,7 +8,7 @@ function About(props) {
       <img 
         src={require('../../assets/images/Memoji.png')} 
         alt="Memoji character of Kalen" 
-        className="w-80 lg:w-80 self-start mx-auto md:mx-2" 
+        className="w-60 lg:w-80 self-start mx-auto md:mx-2" 
       />
       <div className="md:w-1/2 md:my-3 flex flex-col justify-around">
         <h1 className="text-3xl py-5 md:py-0">Full-Stack Web Developer</h1>
