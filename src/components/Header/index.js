@@ -7,8 +7,8 @@ function Header(props) {
     setPortfolioSelected
   } = props;
   return (
-    <header className="w-full p-5 md:flex md:justify-between">
-      <h2><a href="/" className="text-2xl">Kalen Wiley</a></h2>
+    <header className="w-full p-5 md:p-2 lg:p-5 md:flex md:justify-between">
+      <h2><a href="/" className="text-5xl">Kalen Wiley</a></h2>
       <Nav
         portfolioSelected={portfolioSelected}
         setPortfolioSelected={setPortfolioSelected}

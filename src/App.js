@@ -16,7 +16,9 @@ function App() {
       ></Header>
       <main>
         {!portfolioSelected ? (
-          <About></About>
+          <About
+            setPortfolioSelected={setPortfolioSelected}
+          ></About>
         ):(
           <Portofolio></Portofolio>
         )}
