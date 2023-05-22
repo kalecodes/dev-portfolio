@@ -13,16 +13,25 @@ function Portofolio() {
       deployment: 'https://kalecodes.github.io/bar-buddy/'
     },
     {
-      name: 'Example Project',
-      description: 'This is for testing purposes'
+      name: 'Maker',
+      description: "Social media application for artists and art enthusiests, built to consolidate artists online presense and activities to enhance the online-artist community.",
+      technologies: ['Node', 'Express', 'MongoDB', 'Mongoose ORM', 'ApolloServer', 'GraphQL', 'React', 'JSONWebTokens', 'Semantic UI', 'AWS S3', 'Heroku'],
+      repository: 'https://github.com/kalecodes/maker',
+      deployment: 'https://kw-maker.herokuapp.com/'
     },
     {
-      name: 'Example Project 2',
-      description: 'Another example project'
+      name: 'Crypto Today',
+      description: 'A cryptocurrency data dashboard aimed to help first time crypto investors gain more information before investing their money.',
+      technologies: ['HTML', 'CSS', 'Materialize CSS Framework', 'JavaScript', 'CoinCap API', 'Newsdata.io API', 'LocalStorage API'],
+      repository: 'https://github.com/kalecodes/markets-today',
+      deployment: 'https://kalecodes.github.io/markets-today/'
     },
     {
-      name: 'Example Project 3',
-      description: 'Yet another example project'
+      name: 'Weather Dashboard',
+      description: 'Weather app that provides current and future weather forecasts in US cities.',
+      technologies: ['HTML', 'Bootstrap CSS Framework', 'JavaScript', 'Open Weather One Call API', 'Open Weather Geocoding API', 'LocalStorage API'],
+      repository: 'https://github.com/kalecodes/weather-dashboard',
+      deployment: 'https://kalecodes.github.io/weather-dashboard/'
     }
   ]);
   
