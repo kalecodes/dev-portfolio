@@ -10,8 +10,12 @@ function Project({ onClose, currentProject }) {
         <p>{description}</p>
         <img src={require(`../../assets/images/${index}.png`)} alt={`A screenshot of the ${name} application`} className="my-5"/>
         <div className="flex justify-evenly">
-          <a href={repository} target='__blank'><button className="p-3 bg-gray-900 rounded-lg text-white">View Repository</button></a>
-          <a href={deployment} target='__blank'><button className="p-3 bg-sky-600 rounded-lg text-white">Visit Application</button></a>
+          {repository &&  
+            <a href={repository} target='__blank'><button className="p-3 bg-gray-900 rounded-lg text-white">View Repository</button></a>
+          }
+          {deployment &&
+            <a href={deployment} target='__blank'><button className="p-3 bg-sky-600 rounded-lg text-white">Visit Application</button></a>
+          }
         </div>
         {technologies && 
           <div className="my-5">
