@@ -6,6 +6,12 @@ function Portofolio() {
 
   const [projects] = useState([
     {
+      name: 'Portfolio',
+      description: 'This site! - My professional portfolio to showcase my developer skills',
+      technologies: ['Node', 'React', 'JSX', 'Tailwind CSS Framework'],
+      repository: 'https://github.com/kalecodes/dev-portfolio'
+    },
+    {
       name: 'Bar Buddy',
       description: 'A search tool for cocktail lovers and bartenders to find and learn how to make new drink recipes.',
       technologies: ['HTML', 'Bulma CSS Framework', 'JavaScript', 'AJAX', 'JSON', 'Fetch API', 'Web Storage API', 'TheCocktailDB API', 'YouTube Data API'],
@@ -32,6 +38,13 @@ function Portofolio() {
       technologies: ['HTML', 'Bootstrap CSS Framework', 'JavaScript', 'Open Weather One Call API', 'Open Weather Geocoding API', 'LocalStorage API'],
       repository: 'https://github.com/kalecodes/weather-dashboard',
       deployment: 'https://kalecodes.github.io/weather-dashboard/'
+    },
+    {
+      name: 'Photo Portfolio',
+      description: "(Prompted practice project) A photographer's portfolio website, built with React.",
+      technologies: ['CSS', 'create-react-app', 'React', 'JavaScript', 'JSX'],
+      repository: 'https://github.com/kalecodes/photo-port-2',
+      deployment: 'https://kalecodes.github.io/photo-port-2/'
     }
   ]);
   
@@ -47,7 +60,7 @@ function Portofolio() {
       {isModalOpen && <Project currentProject={currentProject} onClose={toggleModal} />}
       {projects.map((project, i) => (
         <div key={project.name} className="mx-auto my-3 shadow-xl rounded-lg overflow-hidden w-10/12 md:w-5/12 lg:w-3/10">
-          <h3>{project.name}</h3>
+          <h3 className="text-2xl p-2">{project.name}</h3>
           <img 
             className="w-full "
             src={require(`../../assets/images/${i}.png`)}
