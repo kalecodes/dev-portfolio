@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.0d7c6ad4.css",
-    "main.js": "/dev-portfolio/static/js/main.811295ac.js",
+    "main.css": "/dev-portfolio/static/css/main.e35e8038.css",
+    "main.js": "/dev-portfolio/static/js/main.fe1c2aa3.js",
     "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
     "static/media/5.png": "/dev-portfolio/static/media/5.d697b9aa1ea4dbc827d1.png",
     "static/media/0.png": "/dev-portfolio/static/media/0.aff9e1c1e9c3633bb1f8.png",
     "static/media/1.png": "/dev-portfolio/static/media/1.aff9e1c1e9c3633bb1f8.png",
+    "static/media/Resume-1.png": "/dev-portfolio/static/media/Resume-1.e25cabf9ee5a6fef2e23.png",
     "static/media/2.png": "/dev-portfolio/static/media/2.aa9b724ceb5b93b33c47.png",
+    "static/media/Resume-2.png": "/dev-portfolio/static/media/Resume-2.9e35e2e748c3e0cf6a28.png",
     "static/media/3.png": "/dev-portfolio/static/media/3.fed992e1f1d899457439.png",
     "static/media/4.png": "/dev-portfolio/static/media/4.fc557b36f52167227ab9.png",
     "static/media/Memoji.png": "/dev-portfolio/static/media/Memoji.5dc477accefe8c4ab6c2.png",
     "index.html": "/dev-portfolio/index.html",
-    "main.0d7c6ad4.css.map": "/dev-portfolio/static/css/main.0d7c6ad4.css.map",
-    "main.811295ac.js.map": "/dev-portfolio/static/js/main.811295ac.js.map",
+    "main.e35e8038.css.map": "/dev-portfolio/static/css/main.e35e8038.css.map",
+    "main.fe1c2aa3.js.map": "/dev-portfolio/static/js/main.fe1c2aa3.js.map",
     "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d7c6ad4.css",
-    "static/js/main.811295ac.js"
+    "static/css/main.e35e8038.css",
+    "static/js/main.fe1c2aa3.js"
   ]
 }
