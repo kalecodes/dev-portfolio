@@ -19,7 +19,9 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
-        <Footer />
+        <Routes>
+          <Route path="/" element={<Footer /> } />
+        </Routes>
       </div>
     </Router>
   );
