@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+
+.active{
+    font-weight: bold;
+}

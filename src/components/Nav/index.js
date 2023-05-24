@@ -1,20 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-function Nav(props) {
-  const {
-    portfolioSelected,
-    setPortfolioSelected
-  } = props;
+function Nav() {
+  
 
   return (
     <nav className="">
       <ul className="flex justify-center pt-2 md:pt-0">
-        <li className={`px-3 text-lg ${portfolioSelected && 'font-bold'}`}>
-          <span onClick={() => setPortfolioSelected(true)}>Portfolio</span>
-        </li>
-        <li className="px-3 text-lg">
+        <NavLink to={'/portfolio'} className={`px-3 text-lg`}>
+          Portfolio
+        </NavLink>
+        <NavLink to={'/resume'} className="px-3 text-lg">
           Resume
-        </li>
+        </NavLink>
       </ul>
     </nav>
   )

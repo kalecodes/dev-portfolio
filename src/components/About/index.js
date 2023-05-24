@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function About(props) {
-  const { setPortfolioSelected } = props;
+function About() {
+  // const { setPortfolioSelected } = props;
 
   return (
     <section className="mt-3 md:mt-0 lg:mt-20 md:flex justify-center">
@@ -13,8 +14,8 @@ function About(props) {
       <div className="md:w-1/2 md:my-3 flex flex-col justify-around">
         <h1 className="text-3xl py-5 md:py-0">Full-Stack Web Developer</h1>
         <div className="flex justify-evenly">
-          <button className="p-3 text-xl rounded-lg bg-sky-700 text-white" onClick={() => setPortfolioSelected(true)}>View My Portfolio</button>
-          <button className="p-3 text-xl rounded-lg bg-sky-700 text-white">View My Resume</button>
+          <Link to="/portfolio"  className="p-3 text-xl rounded-lg bg-sky-700 text-white" >View My Portfolio</Link>
+          <Link to={'/resume'} className="p-3 text-xl rounded-lg bg-sky-700 text-white">View My Resume</Link>
         </div>
 
         <div className="flex justify-evenly pt-5 md:pt-0">

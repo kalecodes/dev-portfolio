@@ -3,7 +3,7 @@ import React from 'react';
 function Resume() {
   return (
     <section>
-      <button>Click here to...</button>
+      <button>Coming Soon...</button>
     </section>
   )
 }
