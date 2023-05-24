@@ -22,8 +22,7 @@ function Portofolio() {
       name: 'Maker',
       description: "Social media application for artists and art enthusiests, built to consolidate artists online presense and activities to enhance the online-artist community.",
       technologies: ['Node', 'Express', 'MongoDB', 'Mongoose ORM', 'ApolloServer', 'GraphQL', 'React', 'JSONWebTokens', 'Semantic UI', 'AWS S3', 'Heroku'],
-      repository: 'https://github.com/kalecodes/maker',
-      deployment: 'https://kw-maker.herokuapp.com/'
+      repository: 'https://github.com/kalecodes/maker'
     },
     {
       name: 'Crypto Today',
@@ -61,12 +60,12 @@ function Portofolio() {
       {projects.map((project, i) => (
         <div key={project.name} className="mx-auto my-3 shadow-xl rounded-lg overflow-hidden w-10/12 md:w-5/12 lg:w-3/10">
           <h3 className="text-2xl p-2">{project.name}</h3>
-          <img 
-            className="w-full "
-            src={require(`../../assets/images/${i}.png`)}
-            alt={`A screenshot of the project ${project.name}`}
-            onClick={() => toggleModal(project, i)}
-          />
+            <img 
+              className="w-full "
+              src={require(`../../assets/images/${i}.png`)}
+              alt={`A screenshot of the project ${project.name}`}
+              onClick={() => toggleModal(project, i)}
+            />
         </div>
       ))}
     </section>
