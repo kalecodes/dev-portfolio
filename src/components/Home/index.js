@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <section className="mt-3 md:mt-0 lg:mt-20 md:flex justify-center">
+    <section className="mt-3 mb-8 md:mt-5 lg:mt-20 md:flex justify-center">
       <img 
         src={require('../../assets/images/Memoji.png')} 
         alt="Memoji character of Kalen" 
