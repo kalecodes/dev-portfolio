@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import Project from "../Project";
 
 function Portofolio() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const [projects] = useState([
     {
       name: 'Portfolio',
@@ -46,28 +43,10 @@ function Portofolio() {
       deployment: 'https://kalecodes.github.io/photo-port-2/'
     }
   ]);
-  
-  const [currentProject, setCurrentProject] = useState();
-
-  const toggleModal = (image, i) => {
-    setCurrentProject({...image, index: i});
-    setIsModalOpen(!isModalOpen);
-  }
 
   return (
-    <section className="mb-16 md:flex flex-wrap">
-      {isModalOpen && <Project currentProject={currentProject} onClose={toggleModal} />}
-      {projects.map((project, i) => (
-        <div key={project.name} className="mx-auto my-3 shadow-xl rounded-lg overflow-hidden w-10/12 md:w-5/12 lg:w-3/10">
-          <h3 className="text-2xl p-2">{project.name}</h3>
-            <img 
-              className="w-full "
-              src={require(`../../assets/images/${i}.png`)}
-              alt={`A screenshot of the project ${project.name}`}
-              onClick={() => toggleModal(project, i)}
-            />
-        </div>
-      ))}
+    <section className="">
+      
     </section>
   );
 }
