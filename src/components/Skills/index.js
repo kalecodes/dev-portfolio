@@ -1,0 +1,119 @@
+import React, { useState } from "react";
+
+function Skills() {
+  const [skills] = useState([
+    {
+      file: 'icons8-html5-100.png',
+      alt: 'HTML icon',
+      label: 'HTML'
+    },
+    {
+      file: 'icons8-css3-100.png',
+      alt: 'CSS icon',
+      label: 'CSS'
+    },
+    {
+      file: 'icons8-javascript-100.png',
+      alt: 'JavaScript icon',
+      label: 'JavaScript'
+    },
+    {
+      file: 'icons8-json-100.png',
+      alt: 'JSON icon',
+      label: 'JSON'
+    },
+    {
+      file: 'icons8-git-100.png',
+      alt: 'Git icon',
+      label: 'Git'
+    },
+    {
+      file: 'icons8-jquery-100.png',
+      alt: 'jQuery icon',
+      label: 'jQuery'
+    },
+    {
+      file: 'icons8-express-js-100.png',
+      alt: 'Express.js icon',
+      label: 'Express.js'
+    },
+    {
+      file: 'icons8-react-96.png',
+      alt: 'React icon',
+      label: 'React'
+    }
+  ])
+  const [skills2] = useState([
+    {
+      file: 'icons8-node-js-96.png',
+      alt: 'Node.js icon',
+      label: 'Node.js'
+    },
+    {
+      file: 'icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png',
+      alt: 'MongoDB icon',
+      label: 'MongoDB'
+    },
+    {
+      file: 'icons8-mongoose-96.png',
+      alt: 'Mongoose.js icon',
+      label: 'Mongoose.js'
+    },
+    {
+      file: 'icons8-graphql-96.png',
+      alt: 'GraphQL icon',
+      label: 'GraphQL'
+    },
+    {
+      file: 'icons8-apollo-96.png',
+      alt: 'Apollo Server icon',
+      label: 'Apollo Server'
+    },
+    {
+      file: 'icons8-bootstrap-96.png',
+      alt: 'Bootstrap icon',
+      label: 'Bootstrap'
+    },
+    {
+      file: 'icons8-tailwind-css-100.png',
+      alt: 'Tailwind CSS icon',
+      label: 'Tailwind CSS'
+    }
+  ])
+
+
+
+  return (
+    <section className="mx-auto flex flex-col w-4/5 mb-10">
+      <div id="section-tile" className="text-5xl text-left pl-10 py-10">
+        Skills
+      </div>
+      <div id="icons-container" className="flex justify-evenly mb-5">
+        {skills.map(skill => (
+          <div className="m-3 w-20 h-20">
+            <img 
+              src={require(`../../assets/icons/${skill.file}`)}
+              alt={skill.alt}
+              className=""
+            />
+            <p>{skill.label}</p>
+          </div>
+        ))}
+      </div>
+      <div id="icons-container" className="flex justify-evenly mb-5">
+        {skills2.map(skill => (
+          <div className="m-3 w-20 h-20">
+            <img 
+              src={require(`../../assets/icons/${skill.file}`)}
+              alt={skill.alt}
+              className=""
+            />
+            <p>{skill.label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default Skills;

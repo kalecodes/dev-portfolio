@@ -7,9 +7,9 @@ function Header() {
       <section className="flex flex-col w-4/5 h-screen">
         <div id="nav" className="">
           <ul className="flex justify-end">
-            <li className="p-2">Skills</li>
-            <li className="p-2">Projects</li>
-            <li className="p-2">Resume</li>
+            <li className="p-3">Skills</li>
+            <li className="p-3">Projects</li>
+            <li className="p-3">Resume</li>
           </ul>
         </div>
         <div id="title" className="h-2/6 relative">
@@ -40,24 +40,24 @@ function Header() {
           </div>
           <div id="arrow-div" className="w-2/12 flex justify-center items-end">
             <img 
-              src={require('../../assets/icons/down-arrow.png')}
+              src={require('../../assets/icons/icons8-down-arrow-100.png')}
               alt="down arrow"
               className="w-12 h-12"
             />
           </div>
           <div id="links-div" className="w-5/12 flex justify-evenly">
             <img 
-              src={require('../../assets/icons/002-linkedin.png')}
+              src={require('../../assets/icons/icons8-linkedin-100.png')}
               alt='LinkedIn'
               className="w-16 h-16 my-auto"
             />
             <img 
-              src={require('../../assets/icons/001-github.png')}
+              src={require('../../assets/icons/icons8-github-100.png')}
               alt='GitHub'
               className="w-16 h-16 my-auto"
             />
             <img 
-              src={require('../../assets/icons/003-gmail.png')}
+              src={require('../../assets/icons/icons8-gmail-100.png')}
               alt='Gmail'
               className="w-16 h-16 my-auto"
             />
