@@ -3,28 +3,34 @@ import React from 'react';
 function Header() {
   
   return (
-    <header className="flex justify-center">
-      <section className="w-4/5 h-screen border-2 border-black border-dashed">
-        <div id="nav" className="border-2 border-black border-dashed">
+    <header className="flex justify-center bg-sky-950">
+      <section className="flex flex-col w-4/5 h-screen">
+        <div id="nav" className="">
           <ul className="flex justify-end">
             <li className="p-2">Skills</li>
             <li className="p-2">Projects</li>
             <li className="p-2">Resume</li>
           </ul>
         </div>
-        <div id="title" className="border-2 border-black border-dashed">
-          <div id="name" className="text-5xl text-left">
-            Kalen Wiley
-          </div>
-          <div id="job" className="text-3xl text-left">
-            Full-Stack Web Developer
+        <div id="title" className="h-2/6 relative">
+          <div className="absolute bottom-5">
+            <div id="name" className="text-8xl text-left">
+              Kalen Wiley
+            </div>
+            <div id="job" className="text-4xl text-left">
+              Full-Stack Web Developer
+            </div>
           </div>
         </div>
-        <div id="about" className="flex border-2 border-black border-dashed">
+        <div id="about" className="flex-1 flex">
           <div className="w-1/2"></div>
-          <p className="w-1/2 text-xl text-left">Hi! I'm Kalen, a full-stack web developer currently located in Richmond, VA. I am passionate about learning new technologies and expanding my skillset. Let's connect!</p>
+          <div className="w-1/2 flex flex-col">
+            <p className="text-xl text-left">Hi! I'm Kalen, a full-stack web developer currently located in Richmond, VA. I am passionate about learning new technologies and expanding my skillset.</p>
+            <p className="text-xl text-left">Let's connect!</p>
+          </div>
+    
         </div>
-        <div id="last-container" className="flex justify-between border-2 border-black border-dashed">
+        <div id="last-container" className="h-fill flex justify-between">
           <div id="memoji-div" className="w-5/12">
             <img 
               src={require('../../assets/images/Memoji.png')}
