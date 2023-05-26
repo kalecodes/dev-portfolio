@@ -24,7 +24,7 @@ function Header() {
         </div>
         <div className="lg:flex-1 flex">
           <div className="w-1/2 hidden lg:block"></div>
-          <div className="lg:w-1/2 flex flex-col py-5 lg:py-0 lg:px-3">
+          <div className="lg:w-1/2 flex flex-col p-5 lg:p-0 lg:px-3">
             <p className="text-xl lg:text-left">Hi! I'm Kalen, a full-stack web developer currently located in Richmond, VA. I am passionate about learning new technologies and expanding my skillset.</p>
             <p className="text-xl lg:text-left">Let's connect!</p>
           </div>
@@ -48,17 +48,17 @@ function Header() {
             <img 
               src={require('../../assets/icons/icons8-linkedin-100.png')}
               alt='LinkedIn'
-              className="w-16 h-16"
+              className="w-16 h-16 my-auto"
             />
             <img 
               src={require('../../assets/icons/icons8-github-100.png')}
               alt='GitHub'
-              className="w-16 h-16"
+              className="w-16 h-16 my-auto"
             />
             <img 
               src={require('../../assets/icons/icons8-gmail-100.png')}
               alt='Gmail'
-              className="w-16 h-16"
+              className="w-16 h-16 my-auto"
             />
           </div>
         </div>
