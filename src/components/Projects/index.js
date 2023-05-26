@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Portofolio() {
+function Projects() {
   const [projects] = useState([
     {
       name: 'Portfolio',
@@ -45,10 +45,42 @@ function Portofolio() {
   ]);
 
   return (
-    <section className="">
-      
+    <section className="flex justify-center bg-sky-950">
+      <div className="w-4/5 mb-10">
+        <div id="section-title" className="text-5xl text-left pl-10 py-10 text-white">
+          Projects
+        </div>
+        <div className="flex flex-col">
+          {projects.map((project, i)=> (
+            <div key={project.name} className="flex my-3">
+              <div className="flex flex-col p-2 bg-slate-400 w-3/5 rounded-l-lg">
+                <div className="text-3xl text-left">{project.name}</div>
+                <div className="text-left">{project.description}</div>
+                <div className="flex-1 flex flex-col justify-center">
+                  <ul className="flex flex-wrap">
+                    {project.technologies.map(technologie => (
+                      <li key={technologie} className="p-1 m-1 bg-slate-300 rounded">{technologie}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="my-2 flex justify-evenly">
+                  <a href={project.repository} target="_blank" rel="noreferrer"><button className="p-3 rounded-lg bg-sky-950 text-white">Repository</button></a>
+                  {project.deployment && 
+                    <a href={project.deployment} target="_blank" rel="noreferrer"><button className="p-3 rounded-lg bg-sky-950 text-white">Visit App</button></a>
+                  }
+                </div>
+              </div>
+              <img 
+                src={require(`../../assets/images/${i}.png`)}
+                alt={project.name}
+                className="w-2/5 h-auto rounded-r-lg"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
 
-export default Portofolio;
+export default Projects;

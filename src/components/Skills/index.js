@@ -67,7 +67,7 @@ function Skills() {
     {
       file: 'icons8-apollo-96.png',
       alt: 'Apollo Server icon',
-      label: 'Apollo Server'
+      label: 'ApolloServer'
     },
     {
       file: 'icons8-bootstrap-96.png',
@@ -77,7 +77,7 @@ function Skills() {
     {
       file: 'icons8-tailwind-css-100.png',
       alt: 'Tailwind CSS icon',
-      label: 'Tailwind CSS'
+      label: 'TailwindCSS'
     }
   ])
 
@@ -90,7 +90,7 @@ function Skills() {
       </div>
       <div id="icons-container" className="flex justify-evenly mb-5">
         {skills.map(skill => (
-          <div className="m-3 w-20 h-20">
+          <div key={skill.alt} className="m-3 w-20 h-20">
             <img 
               src={require(`../../assets/icons/${skill.file}`)}
               alt={skill.alt}
@@ -102,7 +102,7 @@ function Skills() {
       </div>
       <div id="icons-container" className="flex justify-evenly mb-5">
         {skills2.map(skill => (
-          <div className="m-3 w-20 h-20">
+          <div key={skill.alt} className="m-3 w-20 h-20">
             <img 
               src={require(`../../assets/icons/${skill.file}`)}
               alt={skill.alt}
