@@ -4,16 +4,16 @@ function Header() {
   
   return (
     <header id="top" className="flex justify-center bg-sky-950">
-      <section className="flex flex-col justify-between w-screen md:w-4/5 h-full lg:h-screen">
+      <section className="flex flex-col justify-between w-screen md:w-4/5 h-full lg:h-screen min-h-screen">
         <div className="">
           <ul className="pt-5 md:pt-0 flex justify-around lg:justify-end">
-            <li className="p-3 text-xl" onClick={() => window.location.replace("/#skills")}>Skills</li>
-            <li className="p-3 text-xl" onClick={() => window.location.replace("/#projects")}>Projects</li>
-            <li className="p-3 text-xl" onClick={() => window.location.replace("/#resume")}>Resume</li>
+            <li className="p-3 text-2xl" onClick={() => window.location.replace("/#skills")}>Skills</li>
+            <li className="p-3 text-2xl" onClick={() => window.location.replace("/#projects")}>Projects</li>
+            <li className="p-3 text-2xl" onClick={() => window.location.replace("/#resume")}>Resume</li>
           </ul>
         </div>
-        <div className="h-1/6 md:h-2/6 relative flex justify-center lg:justify-start md:flex-none lg:flex">
-          <div className="absolute md:static lg:absolute bottom-5">
+        <div className="h-1/6 md:h-2/6 relative flex justify-center lg:justify-start">
+          <div className="static lg:absolute bottom-5">
             <div className="text-6xl lg:text-8xl lg:text-left">
               Kalen Wiley
             </div>
@@ -24,13 +24,13 @@ function Header() {
         </div>
         <div className="lg:flex-1 flex">
           <div className="w-1/2 hidden lg:block"></div>
-          <div className="lg:w-1/2 flex flex-col md:py-5 lg:py-0 lg:px-3">
+          <div className="lg:w-1/2 flex flex-col py-5 lg:py-0 lg:px-3">
             <p className="text-xl lg:text-left">Hi! I'm Kalen, a full-stack web developer currently located in Richmond, VA. I am passionate about learning new technologies and expanding my skillset.</p>
             <p className="text-xl lg:text-left">Let's connect!</p>
           </div>
         </div>
-        <div className="h-fill flex flex-col items-center lg:flex-row justify-between">
-          <div className="w-5/12 order-2 lg:order-1">
+        <div className="w-full lg:w-4/5 h-fill flex flex-col items-center lg:flex-row justify-between mx-auto">
+          <div className="lg:w-5/12 order-2 lg:order-1">
             <img 
               src={require('../../assets/images/Memoji.png')}
               alt="Kalen's Memomji"

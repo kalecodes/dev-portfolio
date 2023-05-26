@@ -85,13 +85,13 @@ function Skills() {
 
   return (
     <section id="skills" className="mx-auto flex-col w-4/5 mb-10">
-      <div className="text-5xl md:text-left md:pl-10 py-10">
+      <div className="text-5xl lg:text-left lg:pl-10 py-10">
         Skills
       </div>
       <div className="flex md:flex-col justify-center">
         <div className="flex flex-col md:flex-row justify-evenly mb-5">
           {skills.map(skill => (
-            <div key={skill.alt} className="m-3 w-20 h-20">
+            <div key={skill.alt} className="m-3 w-20 h-20 flex-shrink-0">
               <img 
                 src={require(`../../assets/icons/${skill.file}`)}
                 alt={skill.alt}
@@ -103,7 +103,7 @@ function Skills() {
         </div>
         <div className="flex flex-col md:flex-row justify-evenly mb-5">
           {skills2.map(skill => (
-            <div key={skill.alt} className="m-3 w-20 h-20">
+            <div key={skill.alt} className="m-3 w-20 h-20 flex-shrink-0">
               <img 
                 src={require(`../../assets/icons/${skill.file}`)}
                 alt={skill.alt}
