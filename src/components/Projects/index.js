@@ -45,9 +45,9 @@ function Projects() {
   ]);
 
   return (
-    <section className="flex justify-center bg-sky-950">
+    <section id="projects" className="flex justify-center bg-sky-950">
       <div className="w-4/5 mb-10">
-        <div id="section-title" className="text-5xl text-left pl-10 py-10 text-white">
+        <div className="text-5xl text-left pl-10 py-10 text-white">
           Projects
         </div>
         <div className="flex flex-col">
@@ -70,11 +70,13 @@ function Projects() {
                   }
                 </div>
               </div>
-              <img 
-                src={require(`../../assets/images/${i}.png`)}
-                alt={project.name}
-                className="w-2/5 h-auto rounded-r-lg"
-              />
+              <div className="w-2/5 h-auto rounded-r-lg bg-slate-400">
+                <img 
+                  src={require(`../../assets/images/${i}.png`)}
+                  alt={project.name}
+                  className=""
+                />
+              </div>
             </div>
           ))}
         </div>

@@ -3,9 +3,9 @@ import React from 'react';
 
 function Resume() {
   return (
-    <section className="flex justify-center">
+    <section id="resume" className="flex justify-center">
       <div className="w-4/5">
-        <div id="section-title" className="flex justify-between py-10 px-10">
+        <div className="flex justify-between py-10 px-10">
           <div className="text-5xl text-left">
             Resume
           </div>

@@ -11,6 +11,7 @@ function Footer() {
           src={require('../../assets/icons/icons8-up-50.png')}
           alt="up arrow"
           className="mx-auto"
+          onClick={() => window.location.replace("/#top")}
         />
       </div>
       <div className="w-1/3 text-white text-right">
