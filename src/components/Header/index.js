@@ -4,7 +4,7 @@ function Header() {
   
   return (
     <header id="top" className="flex justify-center bg-sky-950">
-      <section className="flex flex-col justify-between md:w-4/5 h-screen">
+      <section className="flex flex-col justify-between w-screen md:w-4/5 h-screen">
         <div className="">
           <ul className="pt-5 md:pt-0 flex justify-around md:justify-end">
             <li className="p-3 text-xl" onClick={() => window.location.replace("/#skills")}>Skills</li>
@@ -24,11 +24,10 @@ function Header() {
         </div>
         <div className="md:flex-1 flex">
           <div className="w-1/2 hidden md:block"></div>
-          <div className="md:w-1/2 flex flex-col">
+          <div className="md:w-1/2 flex flex-col px-3">
             <p className="text-xl md:text-left">Hi! I'm Kalen, a full-stack web developer currently located in Richmond, VA. I am passionate about learning new technologies and expanding my skillset.</p>
             <p className="text-xl md:text-left">Let's connect!</p>
           </div>
-    
         </div>
         <div className="h-fill flex flex-col items-center md:flex-row justify-between">
           <div className="w-5/12 order-2 md:order-1">
