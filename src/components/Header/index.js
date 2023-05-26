@@ -7,9 +7,9 @@ function Header() {
       <section className="flex flex-col justify-between w-screen md:w-4/5 h-full lg:h-screen min-h-screen">
         <div className="">
           <ul className="pt-5 md:pt-0 flex justify-around lg:justify-end">
-            <li className="p-3 text-2xl" onClick={() => window.location.replace("/#skills")}>Skills</li>
-            <li className="p-3 text-2xl" onClick={() => window.location.replace("/#projects")}>Projects</li>
-            <li className="p-3 text-2xl" onClick={() => window.location.replace("/#resume")}>Resume</li>
+            <li className="p-3 text-2xl" onClick={() => window.location.replace("/dev-portfolio/#skills")}>Skills</li>
+            <li className="p-3 text-2xl" onClick={() => window.location.replace("/dev-portfolio/#projects")}>Projects</li>
+            <li className="p-3 text-2xl" onClick={() => window.location.replace("/dev-portfolio/#resume")}>Resume</li>
           </ul>
         </div>
         <div className="h-1/6 md:h-2/6 relative flex justify-center lg:justify-start">
