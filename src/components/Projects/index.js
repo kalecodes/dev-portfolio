@@ -46,14 +46,14 @@ function Projects() {
 
   return (
     <section id="projects" className="flex justify-center bg-sky-950">
-      <div className="w-4/5 mb-10">
-        <div className="text-5xl text-left pl-10 py-10 text-white">
+      <div className="w-11/12 md:w-4/5 mb-10">
+        <div className="text-5xl md:text-left md:pl-10 py-10 text-white">
           Projects
         </div>
         <div className="flex flex-col">
           {projects.map((project, i)=> (
-            <div key={project.name} className="flex my-3">
-              <div className="flex flex-col p-2 bg-slate-400 w-3/5 rounded-l-lg">
+            <div key={project.name} className="flex flex-col md:flex-row my-3">
+              <div className="flex flex-col p-2 bg-slate-400 md:w-3/5 rounded-b-lg md:rounded-b-none md:rounded-l-lg  order-2 md:order-1">
                 <div className="text-3xl text-left">{project.name}</div>
                 <div className="text-left">{project.description}</div>
                 <div className="flex-1 flex flex-col justify-center">
@@ -70,11 +70,11 @@ function Projects() {
                   }
                 </div>
               </div>
-              <div className="w-2/5 h-auto rounded-r-lg bg-slate-400">
+              <div className="md:w-2/5 h-auto rounded-t-lg md:rounded-t-none md:rounded-r-lg bg-slate-400 order-1 md:order-2">
                 <img 
                   src={require(`../../assets/images/${i}.png`)}
                   alt={project.name}
-                  className=""
+                  className="rounded-t-lg md:rounded-t-none md:rounded-r-lg"
                 />
               </div>
             </div>
