@@ -45,21 +45,28 @@ function Header() {
             />
           </div>
           <div className="w-full lg:w-5/12 flex justify-evenly order-1 lg:order-3 md:mt-5 lg:mt-0 lg:h-full">
-            <img 
-              src={require('../../assets/icons/icons8-linkedin-100.png')}
-              alt='LinkedIn'
-              className="w-16 h-16 my-auto"
-            />
-            <img 
-              src={require('../../assets/icons/icons8-github-100.png')}
-              alt='GitHub'
-              className="w-16 h-16 my-auto"
-            />
-            <img 
-              src={require('../../assets/icons/icons8-gmail-100.png')}
-              alt='Gmail'
-              className="w-16 h-16 my-auto"
-            />
+            <a href="https://www.linkedin.com/in/kalen-wiley/" target='_blank' rel='noreferrer'>
+              <img 
+                src={require('../../assets/icons/icons8-linkedin-100.png')}
+                alt='LinkedIn'
+                className="w-16 h-16 my-auto"
+              
+              />
+            </a>
+            <a href='https://github.com/kalecodes' target='_blank' rel='noreferrer'>
+              <img 
+                src={require('../../assets/icons/icons8-github-100.png')}
+                alt='GitHub'
+                className="w-16 h-16 my-auto"
+              />
+            </a>
+            <a href='mailto:kalen.wiley@gmail.com'>
+              <img 
+                src={require('../../assets/icons/icons8-gmail-100.png')}
+                alt='Gmail'
+                className="w-16 h-16 my-auto"
+              />
+            </a>
           </div>
         </div>
       </section>
