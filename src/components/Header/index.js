@@ -45,26 +45,26 @@ function Header() {
             />
           </div>
           <div className="w-full lg:w-5/12 flex justify-evenly order-1 lg:order-3 md:mt-5 lg:mt-0 lg:h-full">
-            <a href="https://www.linkedin.com/in/kalen-wiley/" target='_blank' rel='noreferrer'>
+            <a href="https://www.linkedin.com/in/kalen-wiley/" target='_blank' rel='noreferrer' className="my-auto">
               <img 
                 src={require('../../assets/icons/icons8-linkedin-100.png')}
                 alt='LinkedIn'
-                className="w-16 h-16 my-auto"
+                className="w-16 h-16"
               
               />
             </a>
-            <a href='https://github.com/kalecodes' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/kalecodes' target='_blank' rel='noreferrer' className="my-auto">
               <img 
                 src={require('../../assets/icons/icons8-github-100.png')}
                 alt='GitHub'
-                className="w-16 h-16 my-auto"
+                className="w-16 h-16"
               />
             </a>
-            <a href='mailto:kalen.wiley@gmail.com'>
+            <a href='mailto:kalen.wiley@gmail.com' className="my-auto">
               <img 
                 src={require('../../assets/icons/icons8-gmail-100.png')}
                 alt='Gmail'
-                className="w-16 h-16 my-auto"
+                className="w-16 h-16"
               />
             </a>
           </div>
